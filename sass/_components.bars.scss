@@ -1,0 +1,46 @@
+/* -----------------------------------------------------------------------------
+
+  BARS COMPONENT
+  
+----------------------------------------------------------------------------- */
+
+.c-bars {
+  padding: 12px;
+  border: solid 4px $color--theme;
+}
+
+.c-bars__bar {
+  display: block;
+  margin: 0 0 12px 0;
+  padding: 2px 0;
+  width: 24px;
+  color: #fff;
+  background-color: $color--theme;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+.c-bars__bar:last-child {
+  margin-bottom: 0;
+}
+
+.c-bars__bar.is-expanded {
+  width: 100%;
+}
+
+$n: 5;
+$delay: 0.1;
+
+@for $i from 1 through $n {
+  $in: $delay * ($i - 1);
+  $out: $delay * ($n - $i);
+
+  .c-bars__bar:nth-child(#{$i}) {
+    transition-delay: #{$out}s;
+  }
+
+  .c-bars__bar.is-expanded:nth-child(#{$i}) {
+    transition-delay: #{$in}s;
+  }
+
+}

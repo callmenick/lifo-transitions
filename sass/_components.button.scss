@@ -1,0 +1,30 @@
+/* -----------------------------------------------------------------------------
+
+  BUTTON COMPONENT
+  
+----------------------------------------------------------------------------- */
+
+.c-btn {
+  display: block;
+  margin: 0 auto 12px;
+  padding: 12px 48px;
+  color: #fff;
+  background: $color--theme;
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: background 0.3s;
+}
+
+.c-btn:hover {
+  background-color: $color--theme-dark;
+}
+
+.c-btn:focus {
+  outline: none;
+}
