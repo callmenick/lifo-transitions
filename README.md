@@ -1,14 +1,10 @@
 # Title
 
-Description
-
-## Usage
-
-Usage
+Last in, first out transitions.
 
 ## Demo
 
-View the live demo [here.](http://callmenick.com/_development/...)
+View the live demo [here.](http://callmenick.com/_development/lifo-transitions/)
 
 ## Author
 
